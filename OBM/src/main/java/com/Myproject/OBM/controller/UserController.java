@@ -1,26 +1,18 @@
 package com.Myproject.OBM.controller;
 
 
-import java.awt.PageAttributes.MediaType;
-
+import com.Myproject.OBM.model.Cart;
+import com.Myproject.OBM.servises.UserrServiceIf;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Myproject.OBM.exception.DuplicateEntryException;
-import com.Myproject.OBM.exception.ResourceNotFoundException;
-import com.Myproject.OBM.model.Cart;
-import com.Myproject.OBM.model.OrderList;
 import com.Myproject.OBM.model.Userr;
-import com.Myproject.OBM.servises.UserrService;
 
 
 @CrossOrigin
@@ -29,14 +21,14 @@ import com.Myproject.OBM.servises.UserrService;
 public class UserController {
 	
 	@Autowired
-	private UserrService userService;
+	private UserrServiceIf userService;
 
 
 	//save new user data 
 	@CrossOrigin
 	@PostMapping("/regester")
 	public Userr registerUser(@RequestBody Userr user)  {
-		
+
 	 return userService.SaveUserDetails(user);
 	}
 	
@@ -57,12 +49,12 @@ public class UserController {
 	
 	
 	//place a order
-	
-	@PostMapping(value ="/order")	
-	public Cart Order(@RequestBody Cart cart) {
-		
-		return userService.addOrder(cart);
-				
+	@CrossOrigin
+	@PostMapping(value ="/order/{serviceId}/{userId}")
+	public Cart Order(@PathVariable("serviceId") Integer serviceId, @PathVariable("userId") String useremail) {
+
+		return userService.addOrder(serviceId,useremail);
+
 	}
 
 

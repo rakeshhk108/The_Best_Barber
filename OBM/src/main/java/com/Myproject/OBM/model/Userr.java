@@ -31,9 +31,6 @@ public class Userr{
 	@Column(name = "Userr_password")
 	private String password;
 	
-	
-	
-	
 	public int getUserrId() {
 		return UserrId;
 	}	

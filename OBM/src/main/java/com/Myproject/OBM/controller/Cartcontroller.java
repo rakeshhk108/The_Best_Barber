@@ -2,13 +2,9 @@ package com.Myproject.OBM.controller;
 
 import java.util.List;
 
+import com.Myproject.OBM.servises.CartServicesIf;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.Myproject.OBM.exception.ResourceNotFoundException;
 import com.Myproject.OBM.model.BarberServiceList;
@@ -25,21 +21,25 @@ public class Cartcontroller {
 	
 	
 	@Autowired
-	CartService cs;
+	CartServicesIf cs;
 
-	
-	@PostMapping("/additems")
-	//add service to cart
-	public Cart additemsToCart (Cart cart) {
-		return cs.addServiceToCart(cart);
+
+	@CrossOrigin
+	@GetMapping("/showcart/{useremail}")
+	//get details of card with card id
+	public List<BarberServiceList> getcart(@PathVariable("useremail")String useremail ) {
+
+		return cs.fetchCartDetails(useremail);
 	}
 
-	@GetMapping("/showcart/{id}")
-		//get details of card with card id
-		public Cart fetchByCartId(@PathVariable("id")Integer cartId) {
-			
-			return cs.fetchByCartId(cartId); 
-		}
+	@CrossOrigin
+	@DeleteMapping("/delete/{serviceId}/{useremail}")
+	public String removeFromCart( @PathVariable("useremail")String useremail, @PathVariable("serviceId") Integer serviceId)
+	{
+
+		cs.deleteItemFromCart(serviceId , useremail);
+		return "Deleted";
+	}
 	
 	
 }

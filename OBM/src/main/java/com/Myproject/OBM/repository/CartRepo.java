@@ -12,10 +12,8 @@ import com.Myproject.OBM.model.Userr;
 @Repository
 public interface CartRepo extends JpaRepository <Cart, Integer>{
 	
-//	public List<Cart>findByUserr(Userr userr);
-//
-//	public Cart findByUserrAndBarberServiceList(Userr user, BarberServiceList service);
-//	
-//	
+public List<Cart>findByUserid(int id);
+
+public Cart findByBslidAndUserid(int serviceId , int userId);
 
 }

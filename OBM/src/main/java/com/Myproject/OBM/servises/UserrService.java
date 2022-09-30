@@ -1,26 +1,28 @@
 package com.Myproject.OBM.servises;
 import java.util.List;
 
+import com.Myproject.OBM.repository.BarberServicesRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Myproject.OBM.exception.DuplicateEntryException;
 import com.Myproject.OBM.exception.ResourceNotFoundException;
 import com.Myproject.OBM.model.Cart;
-import com.Myproject.OBM.model.OrderList;
 import com.Myproject.OBM.model.Userr;
 import com.Myproject.OBM.repository.CartRepo;
-import com.Myproject.OBM.repository.OderRepo;
 import com.Myproject.OBM.repository.UserrRepo;
 
 @Service
-public class UserrService {
+public class UserrService implements UserrServiceIf {
 	
 	@Autowired
 	private UserrRepo userrepo;
 	
 	@Autowired
 	private CartRepo cartRepo;
+
+	@Autowired
+	private BarberServicesRepo barberServicesRepo;
 	
 	
 		
@@ -55,7 +57,8 @@ public class UserrService {
 			if((tempEmailId) != null && temppass != null){	
 				
 					userObj = userrepo.findByEmailIdAndPassword(tempEmailId, temppass);	
-					
+
+
 				}
 			
 			if(userObj == null) {
@@ -87,14 +90,15 @@ public class UserrService {
 	}
 
 
-	public Cart addOrder(Cart cart) {
-		
+public  Cart addOrder(int serviceId , String useremail) {
+		Userr user = userrepo.findByEmailId(useremail);
+		Cart cart = new Cart(0 , user.getUserrId(), serviceId);
 		return cartRepo.save(cart);
 	}
+//
 
 
-	
-	
-	
+
+
 
 }

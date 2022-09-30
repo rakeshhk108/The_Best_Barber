@@ -17,7 +17,7 @@ import com.Myproject.OBM.repository.BarberServicesRepo;
 
 
 @Service
-public class AdminService{
+public class AdminService implements AdminServiceIf{
 	
 	
 	@Autowired
@@ -45,7 +45,7 @@ public class AdminService{
 		
 		
 	// add barbers serves and price
-	
+
 	public  BarberServiceList addBarberService(BarberServiceList barberServiceList) {
 		BarberServiceList bs = barberServiceRepo.save( barberServiceList);
 		return bs;
@@ -53,9 +53,14 @@ public class AdminService{
 		
 	// update barber exerting services and prices
 	
-	public BarberServiceList updateService(BarberServiceList barberServiceList) {
+	public BarberServiceList updateService(Integer serviceId, BarberServiceList barberServiceList) {
+		 BarberServiceList bsl = barberServiceRepo.findById(serviceId).get();
+		 bsl.setServiceId(barberServiceList.getServiceId());
+		bsl.setServiceName(barberServiceList.getServiceName());
+		bsl.setServicePrice(barberServiceList.getServicePrice());
+
 		
-		return  barberServiceRepo.saveAndFlush (barberServiceList);
+		return  barberServiceRepo.saveAndFlush (bsl);
 	}
 		
 	

@@ -3,6 +3,8 @@ package com.Myproject.OBM.controller;
 import java.util.List;
 
 
+import com.Myproject.OBM.servises.AdminServiceIf;
+import com.Myproject.OBM.servises.UserrServiceIf;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -30,10 +32,10 @@ import com.Myproject.OBM.servises.UserrService;
 public class AdminController {
 	
 	@Autowired
-	private AdminService adminService;
+	private AdminServiceIf adminServiceIf;
 	
 	@Autowired
-	private UserrService userService;
+	private UserrServiceIf userrServiceIf;
 	
 	
 	
@@ -41,7 +43,7 @@ public class AdminController {
 	//get admin details by name while login
 	@PostMapping("/login")	
 	public Admin loginUser(@RequestBody Admin admin) {		
-		return adminService.fetchUserByemailIdAndPassword(admin);
+		return adminServiceIf.fetchUserByemailIdAndPassword(admin);
 	}
 	
 
@@ -51,14 +53,14 @@ public class AdminController {
 	@PostMapping("/addservice")
 	public  BarberServiceList addService(@RequestBody BarberServiceList barberServiceList) {
 		
-		return adminService.addBarberService(barberServiceList);
+		return adminServiceIf.addBarberService(barberServiceList);
 	}
 	
     // update barber exesting serveses and prices
 	
-		@PutMapping("/update")		
-		public BarberServiceList updateServices(@RequestBody BarberServiceList service) {
-		BarberServiceList updatedBsl = adminService.updateService(service);		
+		@PutMapping("/update/{id}")
+		public BarberServiceList updateServices(@PathVariable("id") Integer serviceId,@RequestBody BarberServiceList service) {
+		BarberServiceList updatedBsl = adminServiceIf.updateService(serviceId,service);
 		return  updatedBsl;
 	}
 	
@@ -66,7 +68,7 @@ public class AdminController {
 		@DeleteMapping("/delete/{id}")
 	// remove services
 	public  String deleteService(@PathVariable("id") Integer serviceId) {
-		adminService.deleteService(serviceId);
+		adminServiceIf.deleteService(serviceId);
 		return "Deleted";		
 	}
 	
@@ -74,7 +76,7 @@ public class AdminController {
 		@GetMapping("/alluser")
 	// see all barbers services
 	public List<Userr> allServices(){
-		return userService.fetchAllUser();
+		return userrServiceIf.fetchAllUser();
 		}
 		
 }

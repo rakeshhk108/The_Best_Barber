@@ -37,64 +37,46 @@ public class Cart {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "Cart_Id")
 	private  int cartId;
-
-	
-	
-	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "idCart", referencedColumnName = "Cart_Id")
-	private List<OrderList> orderList;
-
+	@Column(name = "User_Id")
+	private int userid;
+	@Column(name = "Bsl_Id")
+	private  int bslid;
 
 
 	public int getCartId() {
 		return cartId;
 	}
 
-
-
 	public void setCartId(int cartId) {
 		this.cartId = cartId;
 	}
 
-
-
-	public List<OrderList> getOrderList() {
-		return orderList;
+	public int getUserid() {
+		return userid;
 	}
 
-
-
-	public void setOrderList(List<OrderList> orderList) {
-		this.orderList = orderList;
+	public void setUserid(int userid) {
+		this.userid = userid;
 	}
 
+	public int getBslid() {
+		return bslid;
+	}
 
+	public void setBslid(int bslid) {
+		this.bslid = bslid;
+	}
+
+	public Cart(int cartId, int userid, int bslid) {
+		this.cartId = cartId;
+		this.userid = userid;
+		this.bslid = bslid;
+	}
 
 	public Cart() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-
-
-
-	public Cart(int cartId, List<OrderList> orderList) {
-		super();
-		this.cartId = cartId;
-		this.orderList = orderList;
-	}
-	
-	
-
-
-
-
-
-
-
-
-		
-	}
+}
 	
 	
 	
