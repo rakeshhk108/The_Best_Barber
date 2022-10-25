@@ -1,0 +1,342 @@
+
+<section class="bg-color">
+    
+    <section class="cart" style="color:rgb(59, 95, 179);"><button (click)= "openCart()"><i class="fa fa-shopping-cart fa-4x"></i></button>
+    </section>
+
+
+
+    <div class="containers">
+        <div class="title"> 
+            <p> The Best  Berber</p>
+            <h1><span>Best</span> Barber</h1>
+        </div> 
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class ="discount">35%</div>
+                        <div class="label label-green">Pre-Book</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImage($event)"><img src="../assets/img10.jpeg" alt="product"></div>
+                            <div class="p" (mouseover)="changeImage($event)"><img src="../assets/img11.jpg" alt="product"></div>
+                            <div class="p" (mouseover)="changeImage($event)"><img src="../assets/img12.jpg" alt="product"></div>
+                            <div class="p" (mouseover)="changeImage($event)"><img src="../assets/img13.jpg" alt="product"></div>
+                            <div class="p" (mouseover)="changeImage($event)"><img src="../assets/img14.jpg" alt="product"></div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url}}" alt="Image1">
+                            <div class="cart-line"></div>
+                            <div class="cart-item">
+                                <ul>
+                                    <li><a herf=""><button (click) = addtocart(12)><i class="fa fa-shopping-cart"></i></button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <a href="">Beard Cutting</a>
+                    <div class ="ratting">
+                        <input   type = "radio" id = "five" name = "rate" value="5">
+                        <label for="five"></label>
+                        <input   type = "radio" id = "four" name = "rate" value="4">
+                        <label for="four"></label>
+                        <input   type = "radio" id = "three" name = "rate" value="3">
+                        <label for="three"></label>
+                        <input   type = "radio" id = "tow" name = "rate" value="2">
+                        <label for="tow"></label>
+                        <input   type = "radio" id = "one" name = "rate" value="1">
+                        <label for="one"></label>
+                    </div>                        
+                    <p><span class="money">$61.00</span><span class="old-price">   $71.97</span></p>
+                </div>
+            </div>
+            </div>          
+            <div class="col-md-2">
+                
+
+                <div class="card">
+                <div class="card-main">
+                <div class ="discount">10%</div>
+                <div class="label label-green">Pre-Book</div>
+                <div class="product-container">
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img1.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img2.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img3.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img4.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img5.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img6.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img7.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img8.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage1($event)"><img src="../assets/img9.jpg" alt="product"></div>
+                
+                </div>
+                <div class="image">
+                    <img src="{{url1}}" alt="Image">
+                    <div class="cart-line"></div>
+                    <div class="cart-item">
+                    <ul>
+                        <li><a herf=""><button (click) = addtocart(13)><i class="fa fa-shopping-cart"></i></button></a></li>                        
+                        <!-- <li><a herf=""><i class="fa fa-search"></i></a></li> -->
+                    </ul>
+                    </div>
+            
+                </div>
+                </div>
+                
+                <div class="content">
+                <a href="">Hair Cutting Style</a>
+                <div class ="ratting">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                
+                <p><span class="money">$161.00</span><span class="old-price">   $171.97</span></p>
+
+                
+                
+            
+                </div>
+            
+                </div>
+            
+            </div>
+            <div class="col-md-2">
+                
+
+                <div class="card">
+                <div class="card-main">
+                <div class ="discount">25%</div>
+                <div class="label label-green">Pre-Book</div>
+                <div class="product-container">
+                    <div class="p" (mouseover)="changeImage2($event)"><img src="../assets/img15.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage2($event)"><img src="../assets/img16.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage2($event)"><img src="../assets/img17.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage2($event)"><img src="../assets/img18.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage2($event)"><img src="../assets/img19.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage2($event)"><img src="../assets/img20.jpg" alt="product"></div>
+                    
+                </div>
+                <div class="image">
+                    <img src="{{url2}}" alt="Image3">
+                    <div class="cart-line"></div>
+                    <div class="cart-item">
+                    <ul>
+                        <li><a herf=""><button (click) = addtocart(16)><i class="fa fa-shopping-cart"></i></button></a></li>
+                       
+                    </ul>
+                    </div>
+            
+                </div>
+                </div>
+                
+                <div class="content">
+                <a href="">Body Massage</a>
+                <div class ="ratting">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                
+                <p><span class="money">$365.00</span><span class="old-price">   $471.97</span></p>
+
+                
+                
+            
+                </div>
+            
+                </div>
+            
+            </div>
+            <div class="col-md-2">
+                
+
+                <div class="card">
+                <div class="card-main">
+                <div class ="discount">29%</div>
+                <div class="label label-green">Pre-Book</div>
+                <div class="product-container">
+                    <div class="p" (mouseover)="changeImage3($event)"><img src="../assets/img22.jpeg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage3($event)"><img src="../assets/img23.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage3($event)"><img src="../assets/img24.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage3($event)"><img src="../assets/img25.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage3($event)"><img src="../assets/img26.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage3($event)"><img src="../assets/img27.jpg" alt="product"></div>
+                    
+                </div>
+                <div class="image">
+                    <img src="{{url3}}" alt="Image4">
+                    <div class="cart-line"></div>
+                    <div class="cart-item">
+                    <ul>
+                        <li><a herf=""><button (click) = addtocart(14)><i class="fa fa-shopping-cart"></i></button></a></li>
+                       
+                    </ul>
+                    </div>
+            
+                </div>
+                </div>
+                
+                <div class="content">
+                <a href="">Facial</a>
+                <div class ="ratting">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                
+                <p><span class="money">$200.00</span><span class="old-price">   $351.97</span></p>
+
+                
+                
+            
+                </div>
+            
+                </div>
+            
+            </div>
+            <div class="col-md-3">
+                
+
+                <div class="card">
+                <div class="card-main">
+                <div class ="discount">29%</div>
+                <div class="label label-green">Pre-Book</div>
+                <div class="product-container">
+                    <div class="p" (mouseover)="changeImage4($event)"><img src="../assets/img28.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage4($event)"><img src="../assets/img29.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage4($event)"><img src="../assets/img30.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage4($event)"><img src="../assets/img31.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage4($event)"><img src="../assets/img32.jpg" alt="product"></div>
+                    <div class="p" (mouseover)="changeImage4($event)"><img src="../assets/img33.jpg" alt="product"></div>
+                    
+                </div>
+                <div class="image">
+                    <img src="{{url4}}" alt="Image5">
+                    <div class="cart-line"></div>
+                    <div class="cart-item">
+                    <ul>
+                        <li><a herf=""><button (click) = addtocart(15)><i class="fa fa-shopping-cart"></i></button></a></li>
+                        
+                    </ul>
+                    </div>
+            
+                </div>
+                </div>
+                
+                <div class="content">
+                <a href="">Hair Color</a>
+                <div class ="ratting">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                
+                <p><span class="money">$500.00</span><span class="old-price">   $651.97</span></p>
+
+                
+                
+            
+                </div>
+            
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- policy section -->
+    <section class ="policy">
+    <div class="containers text-center">
+        <div class="row">
+        <div class="col-md-3">
+            <div class="policy-card">
+            <div class="round">
+                <div class="round-icon">
+                <i class="fa fa-bell">
+
+                </i>
+                </div>
+            </div>
+            <h2> Free Booking</h2>
+            <p>Book Your 1st Barber With Free Booking Charge</p>
+            </div>
+
+            
+
+        </div>
+        <div class="col-md-3">
+            <div class="policy-card">
+            <div class="round">
+                <div class="round-icon">
+                <i class="fa fa-check"></i>
+                </div>
+            </div>
+            <h2> Sanitized
+            </h2>
+            <!-- <p> -->
+                <!-- "The Best Barber" is an app that gives you all the tools a barber requires to connect with existing clients  -->
+            <!-- </p> -->
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="policy-card">
+            <div class="round">
+                <div class="round-icon">
+                <i class="fa fa-calendar"></i>
+                </div>
+            </div>
+            <h2> Easy Schedule Management </h2>
+            <p>
+            
+            </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="policy-card">
+            <div class="round">
+                <div class="round-icon">
+                <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <h2> Zero Waiting Time </h2>
+            <p>
+            
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    </section>
+
+    <section class ="our-self">
+    <div class="containers text-center">
+        <div class="row">
+        <div class=" col-max">
+            <h1>The Best Barber - India's First
+            Online Beauty Service Booking App</h1>
+            <p>Finding the right spa or salon for your hair and beauty needs is painstakingly exasperating, and even more so are those long queues and waiting times at the venues, especially during the weekends.
+
+                The salon booking app brings to you a comprehensive range of top-rated male, female and unisex salons in your locality to choose from. You can compare your desired parlour and salon services, prices and the best offers and discounts offered by our partners and pick the best beauty salon and parlour that suits your budget, time, and convenience the most. Also, you can check the genuine user reviews and ratings before booking a salon online and experience high quality services without wasting your precious time.
+                
+                Whether you are looking for a stylish new haircut, hair spa, facial, waxing and hair removal, Bridal makeup, or last-minute nails or want to treat yourself to a soothing body spa, Zoylee happens to be your go-to spa and salon booking app.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,26 @@
+<div>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>s.no</th>
+      <th>Service Name</th>
+      <th>Service Price</th>
+      
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let bs of bservice,let i=index;">
+      <td><span></span>{{i+1}}</td>      
+      <td><span>{{bs.serviceName}}</span></td>
+      <td><span>{{bs.servicePrice}}</span></td> 
+      <td><button (click) ="delete(bs.serviceId)">Delete</button></td>    
+    </tr>
+    <tr>
+      <td></td>
+      <td><button (click) ="Total()">Total</button></td>
+      <td>{{add}}</td>
+      <td><button (click) ="Book()">Book</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

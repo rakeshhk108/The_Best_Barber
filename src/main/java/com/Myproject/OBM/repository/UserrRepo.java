@@ -13,5 +13,5 @@ public interface UserrRepo extends JpaRepository<Userr, Integer>{
 	//spring boots created an querry to fetch user by email id
 	public Userr findByEmailId(String email);
 	public Userr findByEmailIdAndPassword(String email, String password);
-	
+
 }

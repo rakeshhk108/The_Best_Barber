@@ -2623,3 +2623,35 @@ java.lang.NullPointerException: null
 2022-09-30 16:44:36.708  INFO 25276 --- [RMI TCP Connection(148)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-09-30 16:44:36.723  INFO 25276 --- [RMI TCP Connection(148)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-09-30 16:44:36.732  INFO 25276 --- [RMI TCP Connection(148)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-20 12:45:28.990  INFO 19040 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 11.0.12 on INLEN8520085814 with PID 19040 (C:\myProject\Rproject\The_Best_Barber\target\classes started by rakesdas in C:\myProject\Rproject\The_Best_Barber)
+2022-10-20 12:45:28.992  INFO 19040 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-10-20 12:45:29.063  INFO 19040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-20 12:45:29.064  INFO 19040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-20 12:45:29.744  INFO 19040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-20 12:45:29.816  INFO 19040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2022-10-20 12:45:30.719  INFO 19040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-20 12:45:30.734  INFO 19040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-20 12:45:30.735  INFO 19040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-20 12:45:30.841  INFO 19040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-20 12:45:30.842  INFO 19040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+2022-10-20 12:45:31.053  INFO 19040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-20 12:45:31.100  INFO 19040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-20 12:45:31.246  INFO 19040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-20 12:45:31.337  INFO 19040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-20 12:45:31.519  INFO 19040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-20 12:45:31.544  INFO 19040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-10-20 12:45:32.219  INFO 19040 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-20 12:45:32.227  INFO 19040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-20 12:45:32.754  WARN 19040 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-20 12:45:33.085  INFO 19040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-20 12:45:33.123  INFO 19040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-20 12:45:33.135  INFO 19040 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 4.63 seconds (JVM running for 5.273)
+2022-10-20 12:47:14.810  INFO 19040 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-20 12:47:14.812  INFO 19040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-20 12:47:14.814  INFO 19040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-20 12:48:40.401  WARN 19040 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.Myproject.OBM.exception.ResourceNotFoundException: User not found with email : 'null']
+2022-10-20 12:48:46.896  WARN 19040 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.Myproject.OBM.exception.ResourceNotFoundException: User not found with email : 'null']
+2022-10-20 15:21:49.939  WARN 19040 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.Myproject.OBM.exception.ResourceNotFoundException: User not found with email : 'null']
+2022-10-20 16:00:40.263  WARN 19040 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m5s522ms679µs300ns).
+2022-10-20 17:08:38.121  WARN 19040 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m57s732ms219µs400ns).
+2022-10-20 20:35:45.840  WARN 19040 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h8m37s131ms871µs200ns).

@@ -1,0 +1,33 @@
+
+
+
+<h1><div style="text-align:center;">Admin Login</div></h1>
+<div >
+ 
+  <form #loginform ="ngForm" (ngSubmit)="loginUser()" action="action_page.php" method="post">
+    
+
+      <!-- <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div> -->
+    
+      <div class="container">
+        <label for="uemail"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="admin.adminEmail" [(ngModel)] = "admin.adminEmail" >
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="admin.adminPassword" [(ngModel)] = "admin.adminPassword">
+    
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="reset" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+</div>
+
+  
