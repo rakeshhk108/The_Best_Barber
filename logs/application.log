@@ -2655,3 +2655,245 @@ java.lang.NullPointerException: null
 2022-10-20 16:00:40.263  WARN 19040 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m5s522ms679µs300ns).
 2022-10-20 17:08:38.121  WARN 19040 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m57s732ms219µs400ns).
 2022-10-20 20:35:45.840  WARN 19040 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h8m37s131ms871µs200ns).
+2023-02-12 13:30:54.418  INFO 31132 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 17.0.6 on DESKTOP-RS1QEQH with PID 31132 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 13:30:54.454  INFO 31132 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 13:30:54.572  INFO 31132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-12 13:30:54.572  INFO 31132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-12 13:30:55.616  INFO 31132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 13:30:55.738  INFO 31132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 4 JPA repository interfaces.
+2023-02-12 13:30:56.719  INFO 31132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-12 13:30:56.738  INFO 31132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 13:30:56.739  INFO 31132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 13:30:56.863  INFO 31132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 13:30:56.863  INFO 31132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2290 ms
+2023-02-12 13:30:57.145  INFO 31132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 13:30:57.246  INFO 31132 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-02-12 13:30:57.567  INFO 31132 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-12 13:30:57.762  INFO 31132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-12 13:30:57.997  INFO 31132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-12 13:30:58.028  INFO 31132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 13:30:59.068  INFO 31132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 13:30:59.075  INFO 31132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:30:59.823  WARN 31132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 13:31:00.244  INFO 31132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 13:31:00.268  WARN 31132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-02-12 13:31:00.276  INFO 31132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:31:00.280  INFO 31132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-12 13:31:00.287  INFO 31132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-12 13:31:00.292  INFO 31132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-12 13:31:00.309  INFO 31132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-12 13:31:00.343 ERROR 31132 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-02-12 13:31:40.921  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 17.0.6 on DESKTOP-RS1QEQH with PID 960 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 13:31:40.927  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 13:31:41.015  INFO 960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-12 13:31:41.015  INFO 960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-12 13:31:41.932  INFO 960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 13:31:42.030  INFO 960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+2023-02-12 13:31:42.937  INFO 960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 13:31:42.957  INFO 960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 13:31:42.957  INFO 960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 13:31:43.091  INFO 960 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 13:31:43.092  INFO 960 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2075 ms
+2023-02-12 13:31:43.368  INFO 960 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 13:31:43.443  INFO 960 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-02-12 13:31:43.658  INFO 960 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-12 13:31:43.775  INFO 960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-12 13:31:44.001  INFO 960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-12 13:31:44.029  INFO 960 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 13:31:44.919  INFO 960 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 13:31:44.929  INFO 960 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:31:45.515  WARN 960 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 13:31:45.915  INFO 960 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 13:31:45.961  INFO 960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 13:31:45.974  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 5.663 seconds (JVM running for 6.4)
+2023-02-12 13:32:37.540  INFO 960 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 25 class path changes (0 additions, 24 deletions, 1 modification)
+2023-02-12 13:32:37.558  INFO 960 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-12 13:32:37.568  INFO 960 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:32:37.572  INFO 960 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-12 13:32:37.579  INFO 960 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-12 13:32:37.656  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 17.0.6 on DESKTOP-RS1QEQH with PID 960 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 13:32:37.657  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 13:32:37.887  INFO 960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 13:32:37.889  INFO 960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-02-12 13:32:38.003  INFO 960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 13:32:38.005  INFO 960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 13:32:38.006  INFO 960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 13:32:38.033  INFO 960 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 13:32:38.034  INFO 960 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 374 ms
+2023-02-12 13:32:38.075  INFO 960 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 13:32:38.080  INFO 960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-02-12 13:32:38.171  INFO 960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-02-12 13:32:38.172  INFO 960 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 13:32:38.224  INFO 960 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 13:32:38.225  INFO 960 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:32:38.247  WARN 960 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 13:32:38.415  INFO 960 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 13:32:38.444  INFO 960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 13:32:38.448  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 0.826 seconds (JVM running for 58.875)
+2023-02-12 13:32:38.461  INFO 960 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-12 13:32:40.897  INFO 960 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2023-02-12 13:32:40.910  INFO 960 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-12 13:32:40.914  INFO 960 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:32:40.914  INFO 960 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-02-12 13:32:40.919  INFO 960 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-02-12 13:32:40.989  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 17.0.6 on DESKTOP-RS1QEQH with PID 960 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 13:32:40.990  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 13:32:41.311  INFO 960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 13:32:41.402  INFO 960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
+2023-02-12 13:32:41.561  INFO 960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 13:32:41.563  INFO 960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 13:32:41.563  INFO 960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 13:32:41.596  INFO 960 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 13:32:41.596  INFO 960 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2023-02-12 13:32:41.640  INFO 960 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 13:32:41.679  INFO 960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-02-12 13:32:41.836  INFO 960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-02-12 13:32:41.836  INFO 960 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 13:32:42.009  INFO 960 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 13:32:42.010  INFO 960 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:32:42.238  WARN 960 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 13:32:42.371  INFO 960 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 13:32:42.383  INFO 960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 13:32:42.387  INFO 960 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 1.428 seconds (JVM running for 62.814)
+2023-02-12 13:32:42.389  INFO 960 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-12 13:58:48.895  INFO 960 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:58:48.942  INFO 960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-02-12 13:58:48.965  INFO 960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-02-12 13:58:56.249  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 11.0.14 on DESKTOP-RS1QEQH with PID 21908 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 13:58:56.251  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 13:58:56.330  INFO 21908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-12 13:58:56.330  INFO 21908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-12 13:58:57.256  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 13:58:57.341  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2023-02-12 13:58:58.394  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 13:58:58.413  INFO 21908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 13:58:58.413  INFO 21908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 13:58:58.535  INFO 21908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 13:58:58.536  INFO 21908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2205 ms
+2023-02-12 13:58:58.812  INFO 21908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 13:58:58.892  INFO 21908 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-02-12 13:58:59.092  INFO 21908 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-12 13:58:59.205  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-12 13:58:59.415  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-12 13:58:59.443  INFO 21908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 13:59:00.269  INFO 21908 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 13:59:00.276  INFO 21908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 13:59:00.865  WARN 21908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 13:59:01.254  INFO 21908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 13:59:01.295  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 13:59:01.307  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 5.671 seconds (JVM running for 6.39)
+2023-02-12 14:00:53.760  INFO 21908 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 25 class path changes (0 additions, 24 deletions, 1 modification)
+2023-02-12 14:00:53.993  INFO 21908 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-12 14:00:54.008  INFO 21908 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:00:54.012  INFO 21908 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-12 14:00:54.024  INFO 21908 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-12 14:00:54.120  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 11.0.14 on DESKTOP-RS1QEQH with PID 21908 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 14:00:54.120  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 14:00:54.343  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 14:00:54.344  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-02-12 14:00:54.458  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 14:00:54.459  INFO 21908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 14:00:54.460  INFO 21908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 14:00:54.483  INFO 21908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 14:00:54.483  INFO 21908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 360 ms
+2023-02-12 14:00:54.523  INFO 21908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 14:00:54.528  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-02-12 14:00:54.589  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-02-12 14:00:54.590  INFO 21908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 14:00:54.637  INFO 21908 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 14:00:54.637  INFO 21908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:00:54.658  WARN 21908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 14:00:54.764  INFO 21908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 14:00:54.776  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 14:00:54.782  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 0.697 seconds (JVM running for 119.864)
+2023-02-12 14:00:54.787  INFO 21908 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-12 14:00:56.603  INFO 21908 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2023-02-12 14:00:56.812  INFO 21908 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-12 14:00:56.820  INFO 21908 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:00:56.821  INFO 21908 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-02-12 14:00:56.831  INFO 21908 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-02-12 14:00:56.908  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 11.0.14 on DESKTOP-RS1QEQH with PID 21908 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 14:00:56.909  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 14:00:57.143  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 14:00:57.172  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-02-12 14:00:57.260  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 14:00:57.261  INFO 21908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 14:00:57.261  INFO 21908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 14:00:57.283  INFO 21908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 14:00:57.283  INFO 21908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 372 ms
+2023-02-12 14:00:57.314  INFO 21908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 14:00:57.319  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-02-12 14:00:57.374  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-02-12 14:00:57.374  INFO 21908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 14:00:57.477  INFO 21908 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 14:00:57.478  INFO 21908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:00:57.638  WARN 21908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 14:00:57.733  INFO 21908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 14:00:57.741  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 14:00:57.746  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 0.865 seconds (JVM running for 122.829)
+2023-02-12 14:00:57.748  INFO 21908 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-12 14:02:39.876  INFO 21908 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 25 class path changes (0 additions, 24 deletions, 1 modification)
+2023-02-12 14:02:40.096  INFO 21908 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-12 14:02:40.104  INFO 21908 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:02:40.105  INFO 21908 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-02-12 14:02:40.119  INFO 21908 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-02-12 14:02:40.193  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 11.0.14 on DESKTOP-RS1QEQH with PID 21908 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 14:02:40.194  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 14:02:40.383  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 14:02:40.384  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-02-12 14:02:40.474  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 14:02:40.475  INFO 21908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 14:02:40.476  INFO 21908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 14:02:40.502  INFO 21908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 14:02:40.502  INFO 21908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 306 ms
+2023-02-12 14:02:40.531  INFO 21908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 14:02:40.535  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-02-12 14:02:40.592  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-02-12 14:02:40.593  INFO 21908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 14:02:40.647  INFO 21908 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 14:02:40.647  INFO 21908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:02:40.666  WARN 21908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 14:02:40.745  INFO 21908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 14:02:40.751  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 14:02:40.755  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 0.591 seconds (JVM running for 225.839)
+2023-02-12 14:02:40.757  INFO 21908 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-12 14:02:43.196  INFO 21908 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2023-02-12 14:02:43.400  INFO 21908 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-12 14:02:43.406  INFO 21908 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:02:43.407  INFO 21908 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-02-12 14:02:43.418  INFO 21908 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-02-12 14:02:43.486  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Starting ObmApplication using Java 11.0.14 on DESKTOP-RS1QEQH with PID 21908 (D:\Angular\My_Fullstack-_project-master\The_Best_Barber\target\classes started by rakes in D:\Angular\My_Fullstack-_project-master\The_Best_Barber)
+2023-02-12 14:02:43.486  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-12 14:02:43.667  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 14:02:43.689  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2023-02-12 14:02:43.757  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 14:02:43.758  INFO 21908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 14:02:43.758  INFO 21908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-12 14:02:43.776  INFO 21908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 14:02:43.776  INFO 21908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 288 ms
+2023-02-12 14:02:43.798  INFO 21908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 14:02:43.802  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-02-12 14:02:43.851  INFO 21908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-02-12 14:02:43.852  INFO 21908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-12 14:02:43.975  INFO 21908 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 14:02:43.975  INFO 21908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:02:44.165  WARN 21908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 14:02:44.245  INFO 21908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-12 14:02:44.253  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 14:02:44.259  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 0.796 seconds (JVM running for 229.342)
+2023-02-12 14:02:44.260  INFO 21908 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
