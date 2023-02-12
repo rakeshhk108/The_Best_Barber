@@ -2897,3 +2897,6 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-02-12 14:02:44.253  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2023-02-12 14:02:44.259  INFO 21908 --- [restartedMain] com.Myproject.OBM.ObmApplication         : Started ObmApplication in 0.796 seconds (JVM running for 229.342)
 2023-02-12 14:02:44.260  INFO 21908 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-12 14:08:10.672  INFO 21908 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 14:08:10.673  INFO 21908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-02-12 14:08:10.684  INFO 21908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
